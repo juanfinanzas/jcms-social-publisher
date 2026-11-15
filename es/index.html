@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JCMS Social Publisher – Gestión de publicación de videos</title>
+<meta name="description" content="JCMS Social Publisher es una herramienta de gestión de publicación de videos operada por JCMS Digital Media.">
+<meta name="theme-color" content="#0b1f3a">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="../index.html">
+<link rel="alternate" hreflang="es" href="index.html">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="site-header"><div class="wrap">
+  <a class="brand" href="index.html" aria-label="JCMS Social Publisher – Inicio"><svg viewBox="0 0 48 48" role="img" aria-label="JCMS Social Publisher logo" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" rx="11" fill="#2dd4bf"/><path d="M13 31.5 35 12 28.5 36 22 28.5Z" fill="#0b1f3a"/><path d="M22 28.5 35 12 17 25Z" fill="#07162b" opacity=".35"/></svg><span>JCMS Social Publisher<small>por JCMS Digital Media</small></span></a>
+  <nav aria-label="Navegación principal"><ul class="nav">
+    <li><a href="index.html" aria-current="page">Inicio</a></li>
+    <li><a href="terms.html">Términos de Servicio</a></li>
+    <li><a href="privacy.html">Política de Privacidad</a></li>
+    <li class="lang" role="group" aria-label="Idioma"><span aria-current="true">ES</span><a href="../index.html" hreflang="en" lang="en" title="English">EN</a></li>
+  </ul></nav>
+</div></div>
+
+<header class="hero"><div class="wrap">
+  <p class="eyebrow">JCMS Digital Media</p>
+  <h1>JCMS Social Publisher</h1>
+  <p class="lead">Una herramienta de gestión de publicación de videos. Los titulares autorizados conectan sus propias cuentas sociales mediante el inicio de sesión oficial de cada plataforma, revisan sus videos terminados y los envían a esas cuentas para subirlos o publicarlos.</p>
+  <div class="btns">
+    <a class="btn primary" href="#how">Cómo funciona</a>
+    <a class="btn ghost" href="terms.html">Términos de Servicio</a>
+    <a class="btn ghost" href="privacy.html">Política de Privacidad</a>
+  </div>
+  <p class="legal-strip"><span>Legal:</span> <a href="terms.html">Términos de Servicio</a> <a href="privacy.html">Política de Privacidad</a></p>
+</div></header>
+
+<main id="main">
+<section class="block" id="about"><div class="wrap">
+  <h2>Qué es</h2>
+  <p>JCMS Social Publisher es el nombre del flujo de publicación de videos que opera <strong>JCMS Digital Media</strong>. Está construido sobre <strong>Postiz</strong>, una herramienta de código abierto para programar contenido en redes sociales, que ejecutamos en nuestra propia infraestructura. La usamos para organizar videos terminados y publicarlos en cuentas sociales que el titular ha autorizado de forma explícita.</p>
+  <p>Hoy el servicio se usa para publicar videos en cuentas de <strong>TikTok</strong> y <strong>YouTube</strong>. No es un producto de registro público y no publica nada en una cuenta que no haya sido conectada mediante una autorización aprobada por su titular.</p>
+  <div class="note"><strong>Estado actual.</strong> Facebook e Instagram están planificados y todavía no están disponibles. Actualizaremos esta página cuando lo estén.</div>
+</div></section>
+
+<section class="block alt" id="how"><div class="wrap">
+  <h2>Cómo funciona</h2>
+  <div class="grid cols-4">
+    <div class="card"><span class="step-num">1</span><h3>Preparar</h3><p>Los videos terminados se editan fuera de la aplicación y se agregan a la cola de publicación con su texto y configuración.</p></div>
+    <div class="card"><span class="step-num">2</span><h3>Autorizar</h3><p>El titular inicia sesión en la página de la propia plataforma y aprueba el acceso. Nunca vemos ni guardamos la contraseña de la cuenta.</p></div>
+    <div class="card"><span class="step-num">3</span><h3>Revisar</h3><p>Cada video se revisa antes de enviarse. No se envía nada a una cuenta que no esté conectada.</p></div>
+    <div class="card"><span class="step-num">4</span><h3>Publicar</h3><p>El video se envía a la cuenta conectada mediante la API oficial de la plataforma, como borrador para terminar en la app o como publicación directa, según el permiso otorgado.</p></div>
+  </div>
+</div></section>
+
+<section class="block" id="authorization"><div class="wrap">
+  <h2>Autorización de cuentas</h2>
+  <p>Las cuentas se conectan únicamente mediante la pantalla oficial de autorización (OAuth) de cada plataforma. Para TikTok, los permisos solicitados son:</p>
+  <div class="grid cols-3">
+    <div class="card"><h3><code>user.info.basic</code></h3><p>Lee el nombre visible y el avatar de la cuenta para mostrar qué cuenta está conectada.</p></div>
+    <div class="card"><h3><code>video.upload</code></h3><p>Envía un video a la cuenta como borrador, para que el titular lo termine y lo publique dentro de TikTok.</p></div>
+    <div class="card"><h3><code>video.publish</code></h3><p>Publica un video directamente en la cuenta cuando el titular lo ha aprobado.</p></div>
+  </div>
+  <p class="note">El titular puede desconectar una cuenta en cualquier momento, en los ajustes de permisos de la propia cuenta o contactándonos. Consulta la <a href="privacy.html">Política de Privacidad</a>.</p>
+</div></section>
+
+<section class="block alt" id="features"><div class="wrap">
+  <h2>Qué hace</h2>
+  <div class="grid cols-2">
+    <div class="card"><span class="tag">Disponible</span><h3>Organizar contenido</h3><p>Mantiene videos terminados, textos y cuentas de destino en un solo lugar.</p></div>
+    <div class="card"><span class="tag">Disponible</span><h3>Publicar en cuentas conectadas</h3><p>Envía videos a cuentas de TikTok y YouTube que han sido autorizadas.</p></div>
+    <div class="card"><span class="tag">Disponible</span><h3>Varias cuentas</h3><p>Gestiona más de una cuenta conectada, cada una con su propia autorización.</p></div>
+    <div class="card"><span class="tag soon">Planificado</span><h3>Facebook e Instagram</h3><p>Todavía no disponible.</p></div>
+  </div>
+</div></section>
+
+<section class="block" id="security"><div class="wrap">
+  <h2>Seguridad y privacidad</h2>
+  <ul>
+    <li>El inicio de sesión ocurre en la página de autorización de cada plataforma. No pedimos, recibimos ni guardamos contraseñas.</li>
+    <li>Solicitamos solo los permisos indicados arriba y los usamos únicamente para los fines descritos en esta página.</li>
+    <li>El software se ejecuta en infraestructura operada por JCMS Digital Media, no en un servicio de publicación compartido de terceros.</li>
+    <li>No mostramos publicidad y no vendemos información personal.</li>
+  </ul>
+  <p>Lee la <a href="privacy.html">Política de Privacidad</a> y los <a href="terms.html">Términos de Servicio</a> completos.</p>
+</div></section>
+
+<section class="block alt" id="contact"><div class="wrap">
+  <h2>Contacto</h2>
+  <dl class="contact">
+    <dt>Operador</dt><dd>JCMS Digital Media</dd>
+    <dt>Correo</dt><dd><span class="pending">[CORREO DE CONTACTO – PENDIENTE DE CONFIRMAR]</span></dd>
+    <dt>Dirección</dt><dd><span class="pending">[DIRECCIÓN DEL NEGOCIO – PENDIENTE DE CONFIRMAR]</span></dd>
+  </dl>
+</div></section>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <div><p><strong>JCMS Social Publisher</strong></p><p>JCMS Social Publisher es operado por JCMS Digital Media.</p><p>TikTok, YouTube y Postiz son marcas de sus respectivos titulares. Este sitio no está afiliado a ellas.</p></div>
+  <ul aria-label="Legal"><li><a href="terms.html">Términos de Servicio</a></li><li><a href="privacy.html">Política de Privacidad</a></li></ul>
+</div></footer>
+</body>
+</html>
